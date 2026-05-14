@@ -5,7 +5,25 @@
     <link rel="icon" type="image/svg+xml" href="/github.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitHub Profile Viewer</title>
-    <script type="module" crossorigin src="/github-viewer/assets/index-Bft2ndtc.js"></script>
+    <script>
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash,
+          );
+        }
+      })(window.location);
+    </script>
+    <script type="module" crossorigin src="/github-viewer/assets/index-FAXr5AxO.js"></script>
     <link rel="stylesheet" crossorigin href="/github-viewer/assets/index-BGNi-r6Z.css">
   </head>
   <body>
