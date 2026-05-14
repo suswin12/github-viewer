@@ -1,0 +1,135 @@
+================================================
+  GITHUB PROFILE VIEWER — HOW TO RUN
+  Step-by-step guide (inch by inch!)
+================================================
+
+STEP 1: Install Node.js
+------------------------
+Node.js இல்லாம இந்த project run ஆகாது.
+
+1. Browser-ல போய்: https://nodejs.org
+2. "LTS" version download பண்ணுங்க (பச்சை button)
+3. Download ஆன file-ஐ open பண்ணி install பண்ணுங்க
+4. Installation முடிஞ்சதுக்கு பிறகு confirm பண்ண:
+   - Windows: Start > search "cmd" > open Command Prompt
+   - Mac: Finder > Applications > Terminal
+   Type: node --version
+   Output மாதிரி வரும்: v20.x.x ✅
+
+------------------------------------------------
+
+STEP 2: Download the Project
+------------------------------
+இந்த zip file-ஐ download பண்ணுங்க.
+
+1. zip file-ஐ right click > "Extract All" (Windows)
+   Mac-ல: double click பண்ணா automatically extract ஆகும்
+2. "github-viewer" folder கிடைக்கும்
+3. அந்த folder-ஐ Desktop-ல வையுங்க (easy access-க்கு)
+
+------------------------------------------------
+
+STEP 3: Open Terminal in the Project Folder
+--------------------------------------------
+
+Windows:
+  1. "github-viewer" folder-ஐ open பண்ணுங்க
+  2. Address bar-ல click பண்ணுங்க (top-ல path தெரியும் இடம்)
+  3. "cmd" type பண்ணி Enter அழுத்துங்க
+  4. Command Prompt அந்த folder-ல open ஆகும்
+
+Mac:
+  1. "github-viewer" folder-ஐ right click பண்ணுங்க
+  2. "New Terminal at Folder" select பண்ணுங்க
+  (OR) Terminal open பண்ணி type: cd ~/Desktop/github-viewer
+
+------------------------------------------------
+
+STEP 4: Install Dependencies
+------------------------------
+Terminal-ல இந்த command type பண்ணுங்க:
+
+  npm install
+
+Enter அழுத்துங்க.
+
+இது 1-3 நிமிஷம் எடுக்கும். நிறைய text வரும் — பயப்படாதீங்க!
+"added XXX packages" மாதிரி வந்தா install முடிஞ்சது. ✅
+
+------------------------------------------------
+
+STEP 5: Start the App
+-----------------------
+Terminal-ல type பண்ணுங்க:
+
+  npm run dev
+
+Enter அழுத்துங்க.
+
+இந்த மாதிரி output வரும்:
+  VITE v5.x.x  ready in XXX ms
+  ➜  Local:   http://localhost:5173/
+
+------------------------------------------------
+
+STEP 6: Open in Browser
+------------------------
+Browser (Chrome/Firefox) open பண்ணுங்க.
+Address bar-ல type பண்ணுங்க:
+
+  http://localhost:5173
+
+DONE! உங்க GitHub Profile Viewer ready! 🎉
+
+------------------------------------------------
+
+OPTIONAL: Add GitHub Token (More API Requests)
+------------------------------------------------
+Without token: 60 requests/hour (தினமும் use பண்ண போதும்)
+With token: 5000 requests/hour
+
+Token add பண்ண:
+1. github-viewer folder-ல ".env" என்ற file create பண்ணுங்க
+   (Notepad-ல open > Save As > filename: .env)
+2. இந்த line add பண்ணுங்க:
+   VITE_GITHUB_TOKEN=your_token_here
+
+Token எங்கிருந்து பெறுவது:
+1. github.com போய் login பண்ணுங்க
+2. Profile icon > Settings > Developer Settings
+3. Personal access tokens > Tokens (classic) > Generate new token
+4. Note: "github-viewer" > No expiry > Generate
+5. Copy பண்ணி .env file-ல paste பண்ணுங்க
+
+------------------------------------------------
+
+APP STOP பண்ண:
+Terminal-ல Ctrl + C அழுத்துங்க
+
+APP AGAIN START பண்ண:
+  npm run dev
+
+------------------------------------------------
+
+FEATURES உங்க App-ல:
+✅ Search any GitHub username
+✅ Profile overview (bio, location, links)
+✅ Followers / Following count
+✅ Repository list with filter & sort
+✅ Language pie chart
+✅ Stats (total stars, forks, top language)
+✅ Top 5 starred repos
+✅ Recent activity feed
+✅ Followers / Following grid (click to visit)
+✅ Compare two GitHub users
+✅ Copy profile link
+✅ Dark mode toggle
+✅ Search history (saves automatically)
+✅ Skeleton loader
+✅ Mobile responsive
+✅ 404 error page
+
+================================================
+  Problems? Search the error message on Google
+  or ask Claude — ஏதாவது issue இருந்தா சொல்லுங்க!
+================================================
